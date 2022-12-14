@@ -24,16 +24,16 @@ a:hover{
     width: 80%;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
     border-bottom: 2px solid #ccc;
 }
 
 .body {
-    margin-left: 5%;
+    margin-left: 10%;
     display: grid;
     grid-template-columns: 0.9fr 150px;
     grid-gap: 16px;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .name {
@@ -54,8 +54,9 @@ a:hover{
 }
 
 .contacts {
+    height: 40%;
     margin-top: 3%;
-    padding-top: 10%;
+    padding-top: 3%;
     border-left: 2px solid #ccc;
     display: flex;
     flex-direction: column;
@@ -73,7 +74,7 @@ a:hover{
     align-self: start;
     display: flex;
     flex-direction: column;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 .edu-place p {
@@ -146,7 +147,7 @@ a:hover{
     font-size: larger;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .info{
         display: flex;
         flex-direction: column;
@@ -167,6 +168,13 @@ a:hover{
         border-top: 2px solid #ccc;
         padding-left: 0;
         margin-left: 0;
+        padding-top: 7%;
+        height: 40%;
     }
+
+    .another-info {
+       padding-left: 10%;
+    }
+
 }
 
