@@ -28,6 +28,14 @@ a:hover{
     border-bottom: 2px solid #ccc;
 }
 
+.body {
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 0.9fr 150px;
+    grid-gap: 16px;
+    margin-top: 5%;
+}
+
 .name {
     display: flex;
     flex-direction: column;
@@ -47,23 +55,25 @@ a:hover{
 
 .contacts {
     margin-top: 3%;
+    padding-top: 10%;
     border-left: 2px solid #ccc;
     display: flex;
     flex-direction: column;
+    align-content: center;
 }
 
 .contacts ol{
-    flex: 1 1 auto;
-    margin-top: 1%;
+    margin-top: -3%;
+    width: 100%;
     color: #8c8989;
 }
 
-.body {
-    width: 55%;
-    margin-top: -55%;
-    padding-left: 10%;
+.main-info {
+    grid-row: 1;
+    align-self: start;
     display: flex;
     flex-direction: column;
+    padding-right: 10%;
 }
 
 .edu-place p {
@@ -87,6 +97,7 @@ a:hover{
     border-radius: 60%;
     margin-right: 5%;
     width: 20%;
+    height: 20%;
 }
 
 .project {
@@ -124,10 +135,7 @@ a:hover{
 
 .another-info {
     border-left: 2px solid #ccc;
-    width: 30%;
-    padding-left: 3%;
-    margin-top: 10%;
-    margin-left: 70%;
+   padding-left: 30%;
 }
 
 .footer {
@@ -137,3 +145,28 @@ a:hover{
     padding-top: 3%;
     font-size: larger;
 }
+
+@media (max-width: 900px) {
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info img {
+        margin-left: 35%;
+        height: 40%;
+        width: 40%;
+    }
+
+    .header{
+        flex-direction: column;
+    }
+
+    .contacts {
+        border-left: none;
+        border-top: 2px solid #ccc;
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
+
